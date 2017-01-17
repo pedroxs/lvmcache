@@ -1,8 +1,8 @@
 #!/bin/bash
 export tempo=1
-export VGNAME=ubuntu-vg
-export LVNAME=damatoluks
-export LOOPDEVICE=/dev/loop0
+export VGNAME=fedora
+export LVNAME=home
+export LOOPDEVICE=/dev/loop50
 function criar() {
 	temporario=$(mktemp -d)
 	mount -t tmpfs -o size=$1m tmpfs $temporario
